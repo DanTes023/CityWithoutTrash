@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГородБезОтходов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/32/748/748105.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header bg-light-green py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo fw-bold fs-4 text-dark">ГородБезОтходов</div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#welcome" class="nav-link text-dark">Главная</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link text-dark">Продукт</a></li>
+                    <li class="nav-item"><a href="#advantages" class="nav-link text-dark">Преимущества</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой -->
+    <section id="welcome" class="hero text-center py-5 text-white " style="background-image: url('images/hero.png'); background-size: cover;">
+        <div class="mainImg">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1 class="display-4 fw-bold animate__animated animate__fadeInUp">ГородБезОтходов</h1>
+                <p class="lead animate__animated animate__fadeIn animate__delay-1s">Обменяй или переработай вещи ради чистого города!</p>
+                <a href="#product" class="btn btn-outline-light btn-lg animate__animated animate__bounceIn animate__delay-2s">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продукт -->
+    <section id="product" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark">Что мы предлагаем?</h2>
+            <p class="text-center text-muted">Платформа для обмена и переработки вещей.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-truck fa-3x mb-3 text-green"></i>
+                    <p class="text-dark">Логистика</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-star fa-3x mb-3 text-green"></i>
+                    <p class="text-dark">Награды</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-book fa-3x mb-3 text-green"></i>
+                    <p class="text-dark">Образование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Аудитория -->
+    <section id="audience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark">Кто наши пользователи?</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-left">Наши клиенты — это жители городов, преимущественно взрослые в возрасте от 18 до 45 лет, которые технически подкованы и заботятся об окружающей среде. Однако платформа открыта для всех, кто стремится к осознанному потреблению и хочет:</p>
+                    <ul class="list-unstyled text-left">
+                        <li><i class="fas fa-trash-alt me-2"></i> Избавиться от ненужных вещей.</li>
+                        <li><i class="fas fa-search me-2"></i> Найти что-то полезное для себя без лишних затрат.</li>
+                        <li><i class="fas fa-leaf me-2"></i> Поддержать экологию и устойчивое развитие своего города.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/audience.jpg" alt="Аудитория" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проблема -->
+    <section id="problem" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-left mb-4 text-dark">Какую проблему мы решаем?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/trash.jpg" alt="Отходы" class="img-fluid rounded shadow mb-3">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                <p class="text-left">Проект решает проблему избыточного потребления и растущего количества отходов в городах. Он предлагает альтернативу покупке новых вещей, позволяя обмениваться уже имеющимися предметами или сдавать их на переработку. Это снижает экологический след, помогает уменьшить объем мусора и способствует формированию сообщества горожан, которые заботятся о чистоте и устойчивости своего города.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Доступ -->
+    <section id="access" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark">Как получить доступ?</h2>
+            <p class="text-center text-muted">Через сайт, приложение или пункты сбора.</p>
+            <div id="map" style="height: 600px; background-image: url(images/point.jpg); background-size: cover";></div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="py-5 advantages">
+        <div class="container">
+            <h2 class="text-center mb-4">Ключевые преимущества «ГородБезОтходов»</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <i class="fas fa-truck fa-2x mb-3"></i>
+                            <h5 class="card-title">Быстрый вывоз вещей</h5>
+                            <p class="card-text">Курьер забирает отданные на обмен или переработку вещи в течение 2 часов с момента оформления заявки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="card-body">
+                            <i class="fas fa-certificate fa-2x mb-3"></i>
+                            <h5 class="card-title">Гарантированная экологичная утилизация</h5>
+                            <p class="card-text">100 % сданных вещей попадают на переработку, а пользователю автоматически высылается цифровой сертификат переработки от партнёров-заводов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="card-body">
+                            <i class="fas fa-trophy fa-2x mb-3"></i>
+                            <h5 class="card-title">Система поощрений и статусов</h5>
+                            <p class="card-text">После первых 10 успешных обменов пользователь получает статус «Эко-герой» и постоянную скидку 15 % на услуги партнёрских эко-магазинов и сервисов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <i class="fas fa-map-marked-alt fa-2x mb-3"></i>
+                            <h5 class="card-title">Удобная навигация по пунктам приёма</h5>
+                            <p class="card-text">Встроенная карта с фильтрацией по расстоянию (до 1 км) и времени работы пунктов сбора, а также автоматическая прокладка маршрута до выбранного пункта.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="card-body">
+                            <i class="fas fa-hands-helping fa-2x mb-3"></i>
+                            <h5 class="card-title">Помощь волонтёров при сборе вещей</h5>
+                            <p class="card-text">В дни локальных эко-ивентов наша команда волонтёров приезжает по заявке и упаковывает/загружает вещи прямо у подъезда.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="card-body">
+                            <i class="fas fa-comment-alt fa-2x mb-3"></i>
+                            <h5 class="card-title">Мгновенная обратная связь</h5>
+                            <p class="card-text">Онлайн-чат с поддержкой работает круглосуточно, ответ на любой запрос приходит в течение 15 минут.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <i class="fas fa-camera fa-2x mb-3"></i>
+                            <h5 class="card-title">Уникальная технология распознавания</h5>
+                            <p class="card-text">ИИ-алгоритм автоматически распознаёт до 20 категорий вещей по фото и проставляет теги, экономя пользователю время на ручной классификации.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="card-body">
+                            <i class="fas fa-gift fa-2x mb-3"></i>
+                            <h5 class="card-title">Эко-подарок для новичков</h5>
+                            <p class="card-text">При первой успешной сдаче вещей на переработку пользователь получает эко-сумку в подарок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-5 text-center position-relative" style="background-image: url('images/forest.jpg'); background-size: cover;">
+        <div class="mainImg">
+            <div class="overlay"></div>
+            <div class="container position-relative">
+                <h2 class="mb-4 text-white" style="text-shadow: 2px 2px 1px rgb(0, 0, 0);">Сделай город чище!</h2>
+                <a href="#welcome" class="btn btn-outline-light btn-lg" >Начать</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer bg-secondary py-4 text-center">
+        <div class="container">
+            <p class="text-white mb-0" >© 2025 ГородБезОтходов</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
